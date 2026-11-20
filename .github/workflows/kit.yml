@@ -1,0 +1,24 @@
+# The kit's claim is "every mark in every format at its size". This checks the
+# whole matrix on every pull request, so a kit assembled by hand or truncated
+# by a bad copy cannot merge.
+name: kit
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  matrix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version-file: check/go.mod
+          cache: false
+      - run: go test ./...
+        working-directory: check
