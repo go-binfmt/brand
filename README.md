@@ -19,11 +19,12 @@ systems/boot organisations and differs from them by its glyph alone.
 - **GitHub avatar** 512 px — `avatar/`
 - **Social preview** 1280×640 (repo banner) — `social/`
 
-## Repos (1)
+## Repos (2)
 
 | | repo |
 |---|---|
 | <img src="avatar/go-binfmt-elfpatch.png" width="48"> | `elfpatch` |
+| <img src="avatar/go-binfmt-fwimg.png" width="48"> | `fwimg` |
 
 ---
 *Generated with brandgen (go-gfx/gfx, go-opentype): rounded square badge, line glyph, color / white / black variants.*
